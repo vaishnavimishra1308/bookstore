@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page" >
+  
+     <div class="auth-card">
+        
+        <h1>📚 Bookstore</h1>
+        <br>
+        <p>Login to continue your reading journey.</p>
+<br>
+<br>
+        <form id="login-form">
+            <label for="login-email">Email Address</label>
+            <br>
+
+            <input type="email" id="login-email"
+                   placeholder="Enter your email" required>
+<br>
+<br>
+            <label for="login-password">Password</label>
+            <br>
+            <input type="password" id="login-password"
+                   placeholder="Enter your password" required
+                   minlength="6">
+<br>    
+
+<br>
+<button type="submit">Login</button>
+            <p id="login-message" role="status"></p>
+        </form>
+<br>
+
+        <p>Don't have an account?
+            <a href="registration.html">Registration  here  </a>
+        </p>
+
+        <a href="index.html">← Back to Home</a>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
