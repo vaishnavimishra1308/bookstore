@@ -1,0 +1,55 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Bookstore</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="catalogue-banner">
+        <h2>Explore Our Book Collection</h2>
+        <br>
+        <p>Find your next favourite read.</p>
+        <br>
+    </section>
+
+    <main class="catalogue-section">
+        <input type="text" id="search"
+               placeholder="Search by title or author...">
+
+        <div class="categories">  
+            <button onclick="filterCategory('Data Structures Algorithms')">Data Structures Algorithms</button>
+                        
+            <br>
+            <button onclick="filterCategory('Mathematics')">Mathematics</button>
+            <br>
+            <button onclick="filterCategory('Python Programming')">Python Programming</button>
+            <br>
+            <button onclick="filterCategory('Digital Electronics')">Digital Electronics</button>
+        <br>
+    </div>
+
+        <div id="book-list" class="book-container"></div>
+    </main>
+
+    <footer>
+        <p>© 2026 Bookstore</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
