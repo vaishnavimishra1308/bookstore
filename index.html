@@ -1,0 +1,83 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>📚 Bookstore</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+            <a href="#branches">B.Tech Branches</a>
+        </nav>
+    </header>
+
+    <!-- Main Page Layout -->
+    <div class="home-layout">
+
+        <!-- Left Sidebar: B.Tech Branches -->
+        <aside class="branch-sidebar" id="branches">
+            <h3>B.Tech Branches</h3>
+
+            <a href="catalogue.html?branch=CSE">CSE</a>
+            <a href="catalogue.html?branch=IT">
+                Information Technology
+            </a>
+            <a href="catalogue.html?branch=ECE">ECE</a>
+            <a href="catalogue.html?branch=EEE">EEE</a>
+            <a href="catalogue.html?branch=Mechanical">
+                Mechanical
+            </a>
+            <a href="catalogue.html?branch=Civil">Civil</a>
+        </aside>
+
+        <!-- Right Side: Main Content -->
+        <main class="main-content">
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2>Welcome to Bookstore</h2>
+
+                <p>
+                    Discover stories, knowledge, and new adventures.
+                </p>
+
+                <a href="catalogue.html" class="shop-btn">
+                    Explore Books
+                </a>
+            </section>
+
+            <!-- Books Section -->
+            <section class="books-section">
+                <h2>Our Books</h2>
+
+                <div id="book-list" class="book-container"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bookstore | Your World of Books</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
